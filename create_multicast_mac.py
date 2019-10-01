@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+#マルチキャストグループアドレスからマルチキャストMACアドレスを生成する
+# 変数:
+#   ipaddr : マルチキャストグループアドレス
+#
+# サンプル:
+#   $ python create_multicast_mac.py 239.0.0.1
+# output:
+#   01:00:5e:00:00:01
+
 import sys
 
 def create_mac(ipaddr):
@@ -17,4 +26,3 @@ def create_mac(ipaddr):
 
 if __name__ == '__main__':
     print(create_mac(sys.argv[1]))
-
